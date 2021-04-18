@@ -36,17 +36,21 @@
     <ApplicationIcon>PokerProgramIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Card">
-      <HintPath>..\..\..\Models\GraphicPoker_Model\GraphicPoker_Model\bin\Debug\Card.dll</HintPath>
+    <Reference Include="Card, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Support\Card\Card\bin\Debug\Card.dll</HintPath>
     </Reference>
-    <Reference Include="GraphicCard">
-      <HintPath>..\..\..\Models\GraphicPoker_Model\GraphicPoker_Model\bin\Debug\GraphicCard.dll</HintPath>
+    <Reference Include="GraphicCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Support\GraphicCard\bin\Debug\GraphicCard.dll</HintPath>
     </Reference>
-    <Reference Include="GraphicPoker_Model">
+    <Reference Include="GraphicPoker_Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Models\GraphicPoker_Model\GraphicPoker_Model\bin\Debug\GraphicPoker_Model.dll</HintPath>
     </Reference>
-    <Reference Include="Poker_Model">
-      <HintPath>..\..\..\Models\GraphicPoker_Model\GraphicPoker_Model\bin\Debug\Poker_Model.dll</HintPath>
+    <Reference Include="Poker_Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Models\Poker_Model\Poker_Model\bin\Debug\Poker_Model.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -103,8 +103,9 @@
             this.ThirdPlayerCombination_Label = new System.Windows.Forms.Label();
             this.SecondPlayerCombination_Label = new System.Windows.Forms.Label();
             this.FirstPlayerCombination_Label = new System.Windows.Forms.Label();
-            this.DealCardsToPlayers_timer = new System.Windows.Forms.Timer(this.components);
             this.DoAutomaticBets_timer = new System.Windows.Forms.Timer(this.components);
+            this.DealCardsToPlayers_timer = new System.Windows.Forms.Timer(this.components);
+            this.PauseBeetweenRounds_timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GameFone_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -294,7 +295,6 @@
             this.ThirdPlayer_Fold_label.Text = "\r\n        Fold";
             this.ThirdPlayer_Fold_label.UseWaitCursor = true;
             this.ThirdPlayer_Fold_label.Visible = false;
-            this.ThirdPlayer_Fold_label.Click += new System.EventHandler(this.ThirdPlayer_Fold_label_Click);
             // 
             // ThirdPlayer_Raise_label
             // 
@@ -306,7 +306,6 @@
             this.ThirdPlayer_Raise_label.Text = "       \r\n       Raise";
             this.ThirdPlayer_Raise_label.UseWaitCursor = true;
             this.ThirdPlayer_Raise_label.Visible = false;
-            this.ThirdPlayer_Raise_label.Click += new System.EventHandler(this.ThirdPlayer_Raise_label_Click);
             // 
             // ThirdPlayer_Call_label
             // 
@@ -318,7 +317,6 @@
             this.ThirdPlayer_Call_label.Text = "\r\n         Call";
             this.ThirdPlayer_Call_label.UseWaitCursor = true;
             this.ThirdPlayer_Call_label.Visible = false;
-            this.ThirdPlayer_Call_label.Click += new System.EventHandler(this.ThirdPlayer_Call_label_Click);
             // 
             // ThirdPlayer_Check_label
             // 
@@ -330,7 +328,6 @@
             this.ThirdPlayer_Check_label.Text = "\r\n       Check";
             this.ThirdPlayer_Check_label.UseWaitCursor = true;
             this.ThirdPlayer_Check_label.Visible = false;
-            this.ThirdPlayer_Check_label.Click += new System.EventHandler(this.ThirdPlayer_Check_label_Click);
             // 
             // FourthPlayer_Check_label
             // 
@@ -342,7 +339,6 @@
             this.FourthPlayer_Check_label.Text = "\r\n       Check";
             this.FourthPlayer_Check_label.UseWaitCursor = true;
             this.FourthPlayer_Check_label.Visible = false;
-            this.FourthPlayer_Check_label.Click += new System.EventHandler(this.FourthPlayer_Check_label_Click);
             // 
             // FourthPlayer_Call_label
             // 
@@ -354,7 +350,6 @@
             this.FourthPlayer_Call_label.Text = "\r\n         Call";
             this.FourthPlayer_Call_label.UseWaitCursor = true;
             this.FourthPlayer_Call_label.Visible = false;
-            this.FourthPlayer_Call_label.Click += new System.EventHandler(this.FourthPlayer_Call_label_Click);
             // 
             // FourthPlayer_Raise_label
             // 
@@ -366,7 +361,6 @@
             this.FourthPlayer_Raise_label.Text = "       \r\n       Raise";
             this.FourthPlayer_Raise_label.UseWaitCursor = true;
             this.FourthPlayer_Raise_label.Visible = false;
-            this.FourthPlayer_Raise_label.Click += new System.EventHandler(this.FourthPlayer_Raise_label_Click);
             // 
             // FourthPlayer_Fold_label
             // 
@@ -378,7 +372,6 @@
             this.FourthPlayer_Fold_label.Text = "\r\n        Fold";
             this.FourthPlayer_Fold_label.UseWaitCursor = true;
             this.FourthPlayer_Fold_label.Visible = false;
-            this.FourthPlayer_Fold_label.Click += new System.EventHandler(this.FourthPlayer_Fold_label_Click);
             // 
             // FirstPlayer_Check_label
             // 
@@ -390,7 +383,6 @@
             this.FirstPlayer_Check_label.Text = "\r\n       Check";
             this.FirstPlayer_Check_label.UseWaitCursor = true;
             this.FirstPlayer_Check_label.Visible = false;
-            this.FirstPlayer_Check_label.Click += new System.EventHandler(this.FirstPlayer_Check_label_Click);
             // 
             // FirstPlayer_Call_label
             // 
@@ -402,7 +394,6 @@
             this.FirstPlayer_Call_label.Text = "\r\n         Call";
             this.FirstPlayer_Call_label.UseWaitCursor = true;
             this.FirstPlayer_Call_label.Visible = false;
-            this.FirstPlayer_Call_label.Click += new System.EventHandler(this.FirstPlayer_Call_label_Click);
             // 
             // FirstPlayer_Raise_label
             // 
@@ -414,7 +405,6 @@
             this.FirstPlayer_Raise_label.Text = "       \r\n       Raise";
             this.FirstPlayer_Raise_label.UseWaitCursor = true;
             this.FirstPlayer_Raise_label.Visible = false;
-            this.FirstPlayer_Raise_label.Click += new System.EventHandler(this.FirstPlayer_Raise_label_Click);
             // 
             // FirstPlayer_Fold_label
             // 
@@ -426,7 +416,6 @@
             this.FirstPlayer_Fold_label.Text = "\r\n        Fold";
             this.FirstPlayer_Fold_label.UseWaitCursor = true;
             this.FirstPlayer_Fold_label.Visible = false;
-            this.FirstPlayer_Fold_label.Click += new System.EventHandler(this.FirstPlayer_Fold_label_Click);
             // 
             // SecondPlayer_Check_label
             // 
@@ -438,7 +427,6 @@
             this.SecondPlayer_Check_label.Text = "\r\n       Check";
             this.SecondPlayer_Check_label.UseWaitCursor = true;
             this.SecondPlayer_Check_label.Visible = false;
-            this.SecondPlayer_Check_label.Click += new System.EventHandler(this.SecondPlayer_Check_label_Click);
             // 
             // SecondPlayer_Call_label
             // 
@@ -450,7 +438,6 @@
             this.SecondPlayer_Call_label.Text = "\r\n         Call";
             this.SecondPlayer_Call_label.UseWaitCursor = true;
             this.SecondPlayer_Call_label.Visible = false;
-            this.SecondPlayer_Call_label.Click += new System.EventHandler(this.SecondPlayer_Call_label_Click);
             // 
             // SecondPlayer_Raise_label
             // 
@@ -462,7 +449,6 @@
             this.SecondPlayer_Raise_label.Text = "       \r\n       Raise";
             this.SecondPlayer_Raise_label.UseWaitCursor = true;
             this.SecondPlayer_Raise_label.Visible = false;
-            this.SecondPlayer_Raise_label.Click += new System.EventHandler(this.SecondPlayer_Raise_label_Click);
             // 
             // SecondPlayer_Fold_label
             // 
@@ -474,7 +460,6 @@
             this.SecondPlayer_Fold_label.Text = "\r\n        Fold";
             this.SecondPlayer_Fold_label.UseWaitCursor = true;
             this.SecondPlayer_Fold_label.Visible = false;
-            this.SecondPlayer_Fold_label.Click += new System.EventHandler(this.SecondPlayer_Fold_label_Click);
             // 
             // FirstPlayer_BankValue_label
             // 
@@ -673,7 +658,6 @@
             this.FirstPlayer_EnterValueOfRaiseBet_textBox.TabIndex = 50;
             this.FirstPlayer_EnterValueOfRaiseBet_textBox.UseWaitCursor = true;
             this.FirstPlayer_EnterValueOfRaiseBet_textBox.Visible = false;
-            this.FirstPlayer_EnterValueOfRaiseBet_textBox.TextChanged += new System.EventHandler(this.FirstPlayer_EnterValueOfRaiseBet_textBox_TextChanged);
             // 
             // FirstPlayer_ConfirmRaiseBet_button
             // 
@@ -686,7 +670,6 @@
             this.FirstPlayer_ConfirmRaiseBet_button.UseVisualStyleBackColor = true;
             this.FirstPlayer_ConfirmRaiseBet_button.UseWaitCursor = true;
             this.FirstPlayer_ConfirmRaiseBet_button.Visible = false;
-            this.FirstPlayer_ConfirmRaiseBet_button.Click += new System.EventHandler(this.FirstPlayer_ConfirmRaiseBet_button_Click);
             // 
             // FourthPlayer_ConfirmRaiseBet_button
             // 
@@ -699,7 +682,6 @@
             this.FourthPlayer_ConfirmRaiseBet_button.UseVisualStyleBackColor = true;
             this.FourthPlayer_ConfirmRaiseBet_button.UseWaitCursor = true;
             this.FourthPlayer_ConfirmRaiseBet_button.Visible = false;
-            this.FourthPlayer_ConfirmRaiseBet_button.Click += new System.EventHandler(this.FourthPlayer_ConfirmRaiseBet_button_Click);
             // 
             // FourthPlayer_EnterValueOfRaiseBet_textBox
             // 
@@ -709,7 +691,6 @@
             this.FourthPlayer_EnterValueOfRaiseBet_textBox.TabIndex = 52;
             this.FourthPlayer_EnterValueOfRaiseBet_textBox.UseWaitCursor = true;
             this.FourthPlayer_EnterValueOfRaiseBet_textBox.Visible = false;
-            this.FourthPlayer_EnterValueOfRaiseBet_textBox.TextChanged += new System.EventHandler(this.FourthPlayer_EnterValueOfRaiseBet_textBox_TextChanged);
             // 
             // ThirdPlayer_ConfirmRaiseBet_button
             // 
@@ -722,7 +703,6 @@
             this.ThirdPlayer_ConfirmRaiseBet_button.UseVisualStyleBackColor = true;
             this.ThirdPlayer_ConfirmRaiseBet_button.UseWaitCursor = true;
             this.ThirdPlayer_ConfirmRaiseBet_button.Visible = false;
-            this.ThirdPlayer_ConfirmRaiseBet_button.Click += new System.EventHandler(this.ThirdPlayer_ConfirmRaiseBet_button_Click);
             // 
             // ThirdPlayer_EnterValueOfRaiseBet_textBox
             // 
@@ -732,7 +712,6 @@
             this.ThirdPlayer_EnterValueOfRaiseBet_textBox.TabIndex = 54;
             this.ThirdPlayer_EnterValueOfRaiseBet_textBox.UseWaitCursor = true;
             this.ThirdPlayer_EnterValueOfRaiseBet_textBox.Visible = false;
-            this.ThirdPlayer_EnterValueOfRaiseBet_textBox.TextChanged += new System.EventHandler(this.ThirdPlayer_EnterValueOfRaiseBet_textBox_TextChanged);
             // 
             // SecondPlayer_ConfirmRaiseBet_button
             // 
@@ -745,7 +724,6 @@
             this.SecondPlayer_ConfirmRaiseBet_button.UseVisualStyleBackColor = true;
             this.SecondPlayer_ConfirmRaiseBet_button.UseWaitCursor = true;
             this.SecondPlayer_ConfirmRaiseBet_button.Visible = false;
-            this.SecondPlayer_ConfirmRaiseBet_button.Click += new System.EventHandler(this.SecondPlayer_ConfirmRaiseBet_button_Click);
             // 
             // SecondPlayer_EnterValueOfRaiseBet_textBox
             // 
@@ -755,7 +733,6 @@
             this.SecondPlayer_EnterValueOfRaiseBet_textBox.TabIndex = 56;
             this.SecondPlayer_EnterValueOfRaiseBet_textBox.UseWaitCursor = true;
             this.SecondPlayer_EnterValueOfRaiseBet_textBox.Visible = false;
-            this.SecondPlayer_EnterValueOfRaiseBet_textBox.TextChanged += new System.EventHandler(this.SecondPlayer_EnterValueOfRaiseBet_textBox_TextChanged);
             // 
             // FirstPlayer_CanselRaiseBet_button
             // 
@@ -767,7 +744,6 @@
             this.FirstPlayer_CanselRaiseBet_button.UseVisualStyleBackColor = true;
             this.FirstPlayer_CanselRaiseBet_button.UseWaitCursor = true;
             this.FirstPlayer_CanselRaiseBet_button.Visible = false;
-            this.FirstPlayer_CanselRaiseBet_button.Click += new System.EventHandler(this.FirstPlayer_CanselRaiseBet_button_Click);
             // 
             // SecondPlayer_CanselRaiseBet_button
             // 
@@ -779,7 +755,6 @@
             this.SecondPlayer_CanselRaiseBet_button.UseVisualStyleBackColor = true;
             this.SecondPlayer_CanselRaiseBet_button.UseWaitCursor = true;
             this.SecondPlayer_CanselRaiseBet_button.Visible = false;
-            this.SecondPlayer_CanselRaiseBet_button.Click += new System.EventHandler(this.SecondPlayer_CanselRaiseBet_button_Click);
             // 
             // ThirdPlayer_CanselRaiseBet_button
             // 
@@ -791,7 +766,6 @@
             this.ThirdPlayer_CanselRaiseBet_button.UseVisualStyleBackColor = true;
             this.ThirdPlayer_CanselRaiseBet_button.UseWaitCursor = true;
             this.ThirdPlayer_CanselRaiseBet_button.Visible = false;
-            this.ThirdPlayer_CanselRaiseBet_button.Click += new System.EventHandler(this.ThirdPlayer_CanselRaiseBet_button_Click);
             // 
             // FourthPlayer_CanselRaiseBet_button
             // 
@@ -803,7 +777,6 @@
             this.FourthPlayer_CanselRaiseBet_button.UseVisualStyleBackColor = true;
             this.FourthPlayer_CanselRaiseBet_button.UseWaitCursor = true;
             this.FourthPlayer_CanselRaiseBet_button.Visible = false;
-            this.FourthPlayer_CanselRaiseBet_button.Click += new System.EventHandler(this.FourthPlayer_CanselRaiseBet_button_Click);
             // 
             // GameBank_label
             // 
@@ -895,7 +868,6 @@
             this.RestartGame_button.UseVisualStyleBackColor = true;
             this.RestartGame_button.UseWaitCursor = true;
             this.RestartGame_button.Visible = false;
-            this.RestartGame_button.Click += new System.EventHandler(this.RestartGame_button_Click);
             // 
             // FourthPlayerCombination_Label
             // 
@@ -941,15 +913,17 @@
             this.FirstPlayerCombination_Label.UseWaitCursor = true;
             this.FirstPlayerCombination_Label.Visible = false;
             // 
-            // DealCardsToPlayers_timer
-            // 
-            this.DealCardsToPlayers_timer.Interval = 1000;
-            this.DealCardsToPlayers_timer.Tick += new System.EventHandler(this.DealCardsToPlayers_timer_Tick);
-            // 
             // DoAutomaticBets_timer
             // 
             this.DoAutomaticBets_timer.Interval = 1000;
-            this.DoAutomaticBets_timer.Tick += new System.EventHandler(this.DoAutomaticBets_timer_Tick);
+            // 
+            // DealCardsToPlayers_timer
+            // 
+            this.DealCardsToPlayers_timer.Interval = 1000;
+            // 
+            // PauseBeetweenRounds_timer
+            // 
+            this.PauseBeetweenRounds_timer.Interval = 1000;
             // 
             // GameForm
             // 
@@ -1117,7 +1091,8 @@
         private System.Windows.Forms.Label ThirdPlayerCombination_Label;
         private System.Windows.Forms.Label SecondPlayerCombination_Label;
         private System.Windows.Forms.Label FirstPlayerCombination_Label;
-        private System.Windows.Forms.Timer DealCardsToPlayers_timer;
         private System.Windows.Forms.Timer DoAutomaticBets_timer;
+        private System.Windows.Forms.Timer DealCardsToPlayers_timer;
+        private System.Windows.Forms.Timer PauseBeetweenRounds_timer;
     }
 }
